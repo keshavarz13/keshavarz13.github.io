@@ -10,7 +10,7 @@ layout: default
       <div class="entry">{{ post.excerpt }}</div>
       <a>choumb</a>
       {% for tag in post.tags %}
-        <div>tag</div>
+        <div>{{ tag }}</div>
       {% endfor %}
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
