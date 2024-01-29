@@ -8,9 +8,10 @@ layout: default
     align-items: flex-start;
   }
   .post img {
-    width: 200px; /* Adjust the size as per your requirement */
+    width: 30%; /* Adjust the size as per your requirement */
     height: auto;
     margin-left: 20px;
+    align-self: center; /* This line vertically centers the image */
   }
   .post .entry {
     clear: both;
@@ -35,14 +36,14 @@ layout: default
     <div>
       <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
       <div class="entry">{{ post.excerpt }}</div>
+      <div class="tags">
+        {% for tag in post.tags %}
+          <div>{{ tag }}</div>
+        {% endfor %}
+      </div>
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </div>
     <img src="{{ post.image }}" alt="Italian Trulli">
-    <div class="tags">
-      {% for tag in post.tags %}
-        <div>{{ tag }}</div>
-      {% endfor %}
-    </div>
   </article>
   {% endfor %}
 </div>
