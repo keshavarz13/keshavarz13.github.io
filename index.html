@@ -6,8 +6,9 @@ layout: default
   {% for post in site.posts %}
     <article class="post">
       <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+      <img src="{{ post.image }}" alt="Italian Trulli">
       <div class="entry">{{ post.excerpt }}</div>
-      <a href="{{ site.baseurl }}{{ post.url }}" class="reaلهفd-more">Read More</a>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
 </div>
