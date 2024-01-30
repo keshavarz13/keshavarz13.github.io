@@ -91,7 +91,7 @@ CREATE INDEX idx_age ON users (age);
 
 
 Now let's say we want to perform a query that combines the use of these indexes. For example, we want to retrieve the IDs of users with a specific name and age range. We can use the bitmap index scan in the following query:
-```SQL
+```sql
 EXPLAIN SELECT id
 FROM users
 WHERE name = 'John' AND age BETWEEN 30 AND 40;
