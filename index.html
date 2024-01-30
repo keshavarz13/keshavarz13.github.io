@@ -1,27 +1,30 @@
 ---
 layout: default
 ---
+
 <style>
   .post {
     display: flex;
     align-items: flex-start;
-    flex-direction: column; /* This makes the image appear on top of the post */
-    text-align: center; /* Centers the elements */
   }
+
   .post img {
-    width: 30%; /* Adjust the size as per your requirement */
+    width: 30%;
     height: auto;
     margin-left: 20px;
-    align-self: center; /* This line vertically centers the image */
+    align-self: center;
   }
+
   .post .entry {
     clear: both;
   }
+
   .post .tags {
     display: flex;
     flex-wrap: wrap;
     margin-top: 10px;
   }
+
   .post .tags div {
     padding: 5px 10px;
     background-color: #f2f2f2;
@@ -32,11 +35,12 @@ layout: default
     font-weight: bold;
   }
 
-  /* Media query for screens with a width less than 700px */
-  @media (max-width: 700px) {
+  @media only screen and (max-width: 700px) {
     .post img {
-      width: 100%; /* Set the width to 100% for screens less than 700px */
-      margin: 0; /* Reset the margin for better alignment */
+      width: 100%;
+      height: auto;
+      margin-left: 0px;
+      align-self: center;
     }
   }
 </style>
@@ -45,15 +49,15 @@ layout: default
   {% for post in site.posts %}
   <article class="post">
     <div>
+      <img src="{{ post.image }}">
       <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
       <div class="entry">{{ post.excerpt }}</div>
       <div class="tags">
         {% for tag in post.tags %}
-          <div>{{ tag }}</div>
+        <div>{{ tag }}</div>
         {% endfor %}
       </div>
     </div>
-    <img src="{{ post.image }}">
   </article>
   {% endfor %}
 </div>
