@@ -1,11 +1,12 @@
 ---
 layout: default
 ---
-
 <style>
   .post {
     display: flex;
     align-items: flex-start;
+    flex-direction: column; /* This makes the image appear on top of the post */
+    text-align: center; /* Centers the elements */
   }
   .post img {
     width: 30%; /* Adjust the size as per your requirement */
@@ -29,6 +30,14 @@ layout: default
     border-radius: 5px;
     font-size: small;
     font-weight: bold;
+  }
+
+  /* Media query for screens with a width less than 700px */
+  @media (max-width: 700px) {
+    .post img {
+      width: 100%; /* Set the width to 100% for screens less than 700px */
+      margin: 0; /* Reset the margin for better alignment */
+    }
   }
 </style>
 
