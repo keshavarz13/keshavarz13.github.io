@@ -11,7 +11,7 @@ layout: default
   .post img {
     width: 30%;
     height: auto;
-    margin-left: 20px;
+    margin-right: 20px;
     align-self: center;
   }
 
@@ -39,7 +39,7 @@ layout: default
     .post img {
       width: 100%;
       height: auto;
-      margin-left: 0px;
+      margin-right: 0px;
       align-self: center;
     }
   }
@@ -48,8 +48,8 @@ layout: default
 <div class="posts">
   {% for post in site.posts %}
   <article class="post">
+    <img src="{{ post.image }}">
     <div>
-      <img src="{{ post.image }}">
       <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
       <div class="entry">{{ post.excerpt }}</div>
       <div class="tags">
