@@ -76,7 +76,7 @@ When you run the EXPLAIN command, PostgreSQL provides a detailed breakdown of th
 
 Let's say we have a table "users" with columns "id", "name", and "age". We have separate indexes on the "name" and "age" columns. We want to perform a query that uses both indexes to speed up the data retrieval.
 
-``` SQL
+```sql
 -- Creating a sample table
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
@@ -101,7 +101,7 @@ When you run this query, you might see that PostgreSQL uses a bitmap index scan 
 
 Suppose we have a table "products" with columns "product_id", "product_name", and "price". We create an index on the "price" column, and we want to retrieve only the prices from the table using the index without touching the actual table data.
 
-``` SQL
+```sql
 -- Creating a sample table
 CREATE TABLE products (
     product_id SERIAL PRIMARY KEY,
@@ -115,7 +115,7 @@ CREATE INDEX idx_price ON products (price);
 
 Now, let's perform a query that can take advantage of index-only scan to avoid accessing the table data:
 
-``` SQL 
+```sql 
 EXPLAIN SELECT price
 FROM products;
 ```
@@ -125,7 +125,7 @@ In this case, as long as the index on the "price" column provides all the necess
 Now, let's consider a scenario where we have a query that may use an index scan or a sequential scan.
 
 Suppose we have a similar table "orders" with columns "order_id", "customer_id", "order_date", and "total_amount". We create an index on the "order_date" column.
-``` SQL
+```sql
 -- Creating a sample table
 CREATE TABLE orders (
     order_id SERIAL PRIMARY KEY,
@@ -139,7 +139,7 @@ CREATE INDEX idx_order_date ON orders (order_date);
 ```
 
 Now let's construct a query that may either use an index scan or a sequential scan:
-``` SQL
+```sql
 EXPLAIN SELECT order_id, total_amount
 FROM orders
 WHERE order_date >= '2023-01-01' AND 
