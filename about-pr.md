@@ -12,22 +12,18 @@ permalink: /about-pr/
 
 ### تجارب کاری
 
-- تیم لید در [تپسی](https://tapsi.ir/en)  
+- تیم لید در [تپسی](https://tapsi.ir/en) `Jan 2023 – Present`  
 ![go](https://img.shields.io/badge/-Go-05122A?style=flat&logo=go) ![Node.js](https://img.shields.io/badge/-Node.js-05122A?style=flat&logo=node.js)  
-  - Jan 2023 – Present
-      
 
-- مهندس نرم افزار در  [بله](https://bale.ai/)  
+- مهندس نرم افزار در  [بله](https://bale.ai/)  `Apr 2022 – Jan 2023`  
 ![go](https://img.shields.io/badge/-Go-05122A?style=flat&logo=go) 
-  - Apr 2022 – Jan 2023
 
-- مهندس نرم افزار در  [علی‌بابا](http://alibaba.ir/)  
+- مهندس نرم افزار در  [علی‌بابا](http://alibaba.ir/)  `Apr 2020 – Apr 2022`  
 ![.net](https://img.shields.io/badge/-ASP%20.NET%20Core-05122A?style=flat&logo=dotnet) ![.csharp](https://img.shields.io/badge/-c%23-05122A?style=flat&logo=csharp) 
-  - Apr 2020 – Apr 2022
   
 
 ## 🤝🏻 ارتباط با من
-<p align="left">
+<p align="right">
   <a href="https://www.linkedin.com/in/keshavarz13/"><img src="https://img.shields.io/badge/-MohammadAli%20Keshavarz-0077B5?style=flat&logo=Linkedin&logoColor=white"/></a>
   <a href="mailto:keshavarz.ma13@gmail.com"><img src="https://img.shields.io/badge/-keshavarz.ma13@gmail.com-D14836?style=flat&logo=Gmail&logoColor=white"/></a>
 </p>
