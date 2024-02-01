@@ -13,7 +13,11 @@
 /* BASE RULES */
 /**************/
 
+
+@font-face { font-family: bahij; src: url('./bahij.ttf'); } 
+
 html {
+  font-family: bahij;
   font-size: 100%;
 }
 
