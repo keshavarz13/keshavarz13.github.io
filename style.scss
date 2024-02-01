@@ -14,16 +14,14 @@
 /**************/
 
 
-@font-face { font-family: bahij; src: url('{{ site.baseurl }}/bahij.ttf'); } 
-
 html {
-  font-family: bahij;
   font-size: 100%;
 }
 
 body {
 	background: $white;
   font: 18px/1.4 $helvetica;
+  font-family: Vazirmatn, sans-serif;
   color: $darkGray;
 }
 
