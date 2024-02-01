@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default-pr
 ---
 
 <div class="posts">
@@ -7,7 +7,7 @@ layout: default
     <h3>{{ tag[0] }}</h3>
     <ul>
       {% for post in tag[1] %}
-      {% if post.lang == "en" %}
+      {% if post.lang == "pr" %}
         <li><a href="{{ post.url }}">{{ post.title }}</a></li>
       {% endif %}
       {% endfor %}
