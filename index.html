@@ -44,6 +44,7 @@ layout: default
 
 <div class="posts">
   {% for post in site.posts %}
+  {% if post.lang == "pr" %}
   <article class="post">
     <img src="{{ post.image }}">
     <div>
@@ -53,9 +54,18 @@ layout: default
         {% for tag in post.tags %}
         <div>{{ tag }}</div>
         {% endfor %}
-        <div>{{ post.lang }}</div>
       </div>
     </div>
   </article>
+  {% endif %}
+  {% if post.lang == "en" %}
+  <div>choumb</div>
+  {% endif %}
   {% endfor %}
+  <script>
+    var myDiv = document.getElementsByClassName('myDiv');
+    if (myDiv.textContent === 'foo') {
+      myDiv.style.display = 'none';
+    }
+  </script>
 </div>
