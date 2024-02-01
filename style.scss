@@ -14,7 +14,7 @@
 /**************/
 
 
-@font-face { font-family: bahij; src: url('./bahij.ttf'); } 
+@font-face { font-family: bahij; src: url('{{ site.baseurl }}/bahij.ttf'); } 
 
 html {
   font-family: bahij;
