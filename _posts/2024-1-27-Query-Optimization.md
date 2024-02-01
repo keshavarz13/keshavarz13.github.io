@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Query Optimization in PostgreSQL!
+title: Query Optimization in PostgreSQL - Part 1
 tags: postgresql database
 image: https://raw.githubusercontent.com/keshavarz13/keshavarz13.github.io/main/images/pg-query-opt.png
 lang: en
@@ -53,25 +53,12 @@ The PostgreSQL EXPLAIN command provides insights into how the database plans to 
    An index scan involves using an index to look up matching rows directly, potentially more efficiently than a sequential scan.  
    There can be different types of index scans, such as bitmap index scans or index-only scans, depending on the query and index configuration.
 
-3. Bitmap Index Scan:  
+   - Bitmap Index Scan:  
    This scan method is used when multiple indexes can be combined through bitmap operations to efficiently evaluate complex query conditions.
 
-4. Index Only Scan:  
+   - Index Only Scan:  
    If the query only requires data from the index itself, PostgreSQL may perform an index-only scan, avoiding the need to access the actual table data.
 
-5. Nested Loop Join:  
-   This join method involves using one of the relations as the driving table and scanning through the other relation for matching rows. It’s efficient for small result sets.
-
-6. Merge Join:  
-   Merge join is used when both sides of the join are already sorted on the join criteria. It requires less memory than hash joins but relies on presorted inputs.
-
-7. Hash Join:  
-   Hash joins involve building a hash table from one of the join inputs and then scanning the other input to find matching entries. It's efficient for large result sets.
-
-8. Aggregate and Window Functions:  
-   The execution plan also reveals the use of aggregate and window functions. These functions may involve sorting, grouping, and other operations as part of the query.
-
-When you run the EXPLAIN command, PostgreSQL provides a detailed breakdown of the query plan, including estimates of the cost and the number of rows that will be processed at each step. By understanding these different scan methods and join types, you can gain insights into how the database is executing your queries and identify potential areas for optimization.
 
 ## Examples
 
@@ -149,4 +136,4 @@ WHERE order_date >= '2023-01-01' AND
 
 Depending on the data distribution and the selectivity of the "order_date" values, PostgreSQL may choose to use an index scan if it finds that using the index is more efficient due to the filter conditions. Alternatively, it may resort to a sequential scan if a large portion of the table needs to be accessed and the index scan becomes less efficient.
 
-In PostgreSQL, the query planner uses various factors to decide whether to perform an index scan or a sequential scan based on the query and the available indexes.
+<b>We will talk about join types, aggregation functions and window functions in another post soon.</b>
