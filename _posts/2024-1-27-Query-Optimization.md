@@ -3,7 +3,7 @@ layout: post
 title: Query Optimization in PostgreSQL!
 tags: postgresql database
 image: https://raw.githubusercontent.com/keshavarz13/keshavarz13.github.io/main/images/pg-query-opt.png
-lang: pr
+lang: en
 ---
 
 Query optimization in PostgreSQL involves identifying and resolving performance issues within SQL queries. PostgreSQL provides the "EXPLAIN" command, which outputs the query execution plan and helps identify potential bottlenecks. Here's a step-by-step breakdown:
