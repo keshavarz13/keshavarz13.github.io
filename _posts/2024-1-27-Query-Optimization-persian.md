@@ -22,9 +22,9 @@ lang: pr
 
 
 ```sql
-          EXPLAIN SELECT * 
-     FROM your_table 
-     WHERE some_column = 'some_value';
+EXPLAIN SELECT * 
+FROM your_table 
+WHERE some_column = 'some_value';
 ```
 
 2.خواندن پلن اجرایی:  
