@@ -1,7 +1,7 @@
 ---
 layout: page-pr
-title: About
-permalink: /about/
+title: درباره‌ی من 
+permalink: /about-pr/
 ---
 
 ### EDUCATION
