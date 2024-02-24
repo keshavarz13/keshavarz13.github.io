@@ -1,7 +1,7 @@
 # this file is temp and have no value at all! 
 
 # COMPONENTS
---- 
+
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
@@ -29,22 +29,4 @@ spec:
   owner: platform
   system: websites
 
-
-# ORGANISATION
----
-apiVersion: backstage.io/v1alpha1
-kind: User
-metadata:
-  name: mohammadAli
-spec:
-  memberOf: [platform]
----
-# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-group
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: platform
-spec:
-  type: team
-  children: []
 
