@@ -32,22 +32,27 @@ Congratulations, now you just need to open localhost:3000 in your browser to bri
 
 In general, I will list below the things you should do to configure your backstage in the best way:
 
-1. Setting up the postgres database for your backstage
+<b>
+1: Setting up the postgres database for your backstage
+</b>
 
   This will cause your changes to be saved on the database, by default sqlite is used in the backstage, which we all know its problems :)
 
   To do this, you can use the [guide](https://backstage.io/docs/getting-started/configuration#install-and-configure-postgresql)
 
 
-2. Integrating with your organization's gitlab (self hosted gitlab)
+<b>
+2: Integrating with your organization's gitlab (self hosted gitlab)
+</b>
 
   doing this allows the backstage to read the definition of your services from your organization's git, can update it periodically, and information such as requests, contributors, issues, language Have programming and information like this from each of your repositories in the backstage.
 
   To do this, there is a proper plugin that you can easily use by using the [guide](https://github.com/immobiliare/backstage-plugin-gitlab).
 
 
-
-3. Deploying and Docking the application
+<b>
+3: Deploying and Docking the application
+</b>
 
   There are several methods for this, such as separating slow and front-end, such as using a multi-stage docker file and other such methods, for this, there is no better place than [Backstage official document](https://backstage. io/docs/deployment/) cannot help you.
 
