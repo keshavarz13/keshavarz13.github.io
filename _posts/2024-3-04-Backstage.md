@@ -6,15 +6,16 @@ image: https://raw.githubusercontent.com/keshavarz13/keshavarz13.github.io/main/
 lang: en
 ---
 
-As part of the software development process, where teams and individuals with various roles are involved, sharing information and knowledge becomes increasingly complex and even unmanageable. For example, often you might find that one of your services is experiencing issues and you need to see if other services developed by other teams have recently undergone any changes or not.
+
+As part of the software development process, where teams and individuals with various roles and multiple processes within an organization are involved, sharing information and knowledge increasingly becomes complex and even unmanageable. For example, it often happens that one of your services encounters an issue. You know that this service is connected to several other services, and you need to see whether other services developed by other teams have recently undergone any changes. Or, for another example, you may want to view documents related to your service or other services in one centralized location. Or imagine wanting to view, for instance, the Swagger documentation of a service, among thousands of similar tasks that arise during our day. To solve such issues, you often need access to multiple different panels. Moreover, if you have the necessary access to view this information (especially if your organization does not use a mono repository), you need a comprehensive panel that contains all this information. Since enterprise software has evolved into its present form, the idea of having such a comprehensive panel has always been a fantasy but an enticing one.
 
 ## What is Backstage?
-Backstage is an open-source platform for building a developer portal developed by Spotify developers as a magical development panel. Backstage integrates all your infrastructure tools, services, and documentation to create an end-to-end efficient development environment.
 
-## How does Backstage work?
-Backstage works by having all services in their repositories write specifications of their services in a specific format (a YAML file), and once you register this file in Backstage, the magic begins. Dependencies, APIs, related links, pipelines, contributors, and more are all displayed in the Backstage panel.
+Backstage is an open-source platform for building developer portals developed by Spotify developers as the magical panel mentioned above. Backstage integrates all your infrastructure tools, services, and documentation to create an end-to-end development environment seamlessly. How does this panel work? Backstage works by having all services in their repositories write their service specifications in a defined format (a YAML file). Once you register this file in Backstage, the magic begins. Dependencies, APIs, related links, pipelines, contributors, and more are all displayed in the Backstage panel. To update it, you just need to keep your YAML file up-to-date in your repository, and the Backstage panel periodically checks and keeps itself updated. In general, Backstage aims to improve onboarding processes, reduce the number of questions and distractions from other team members, and enhance other similar aspects. To see if Backstage has had a positive impact on your organization, you just need to see how much things have improved in these areas.
 
-## How to set up Backstage in your organization?
+
+## How to Set Up Backstage?
+
 To install Backstage, you need to have NodeJS, Yarn, Docker, and Git installed. Then run the following command:
 
 ```sh
