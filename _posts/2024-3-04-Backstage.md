@@ -15,13 +15,13 @@ Backstage is an open-source platform for building a developer portal developed b
 Backstage works by having all services in their repositories write specifications of their services in a specific format (a YAML file), and once you register this file in Backstage, the magic begins. Dependencies, APIs, related links, pipelines, contributors, and more are all displayed in the Backstage panel.
 
 ## How to set up Backstage in your organization?
-To install Backstage, you need to have NodeJS, Yarn, Docker, and Git installed. Then run the following commands:
+To install Backstage, you need to have NodeJS, Yarn, Docker, and Git installed. Then run the following command:
 
 ```sh
 npx @backstage/create-app@latest
 ```
 
-after that you
+Then run the following commands too:
 
 ```sh
 cd your-backstage-directory
@@ -67,23 +67,23 @@ To add a new service, create a YAML file in the service repository and fill in t
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: your-service-name 
-  description: some description about your service 
-  links: 
+  name: your-service-name # In this section, write the name of your service, for example, report-center and...
+  description: some shit about your service # In this section, you can explain a little about what this service is for.
+  links: # In this section, you can add links related to your service, such as Grafana, Hangfire, Confluence, etc.
     - url: https://some.link/ 
       title: some-link 
-      icon: some-material-icon 
+      icon: some-material-icon # For this part, you can use material UI icons, for example, dashboard, etc. To be able to use the right icon, you can use this link: https://fonts.google.com/icons
     - url: https://another.link/
       title: backstage-official-website
       icon: some-material-icon
 spec:
   type: service 
-  lifecycle: Production 
-  owner: platform 
-  providesApis: 
+  lifecycle: Production # you can use Production/Development
+  owner: platform # write your team name. (Choose you team from this file: )
+  providesApis: # Names of API resources provided by your service and defined below (you can have any number of APIs)
     - openapi-example 
     - proto-example
-  consumesApis: 
+  consumesApis: # Names of API resources provided by another service and defined in the entities.yaml of that service(you can have any number of APIs)
     - another-service-api-proto 
 
 --- 
@@ -96,13 +96,12 @@ spec:
   type: openapi
   lifecycle: production
   owner: platform
-  dependsOn: 
-    - sql-server
+  dependsOn: # The names of the components you have dependencies on (if that component exists in the backstage, the name you enter must be the same as its name in the backstage)
+    - sql-serevr
     - envoy
     - report-center
   definition:
-    $text: https://address.swagger.json/
-
+    $text: https://address.swagger.json/ # Add address of your swagger json for example https://foo.bar/swagger/v1/swagger.json
 --- 
 apiVersion: backstage.io/v1alpha1
 kind: API
