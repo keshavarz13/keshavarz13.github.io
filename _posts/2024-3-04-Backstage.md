@@ -1,126 +1,52 @@
 ---
 layout: post
-title: What is Backstage and how to use it? 
+title: What is Backstage? 
 tags: SoftwareEngineering
 image: https://raw.githubusercontent.com/keshavarz13/keshavarz13.github.io/main/images/backstage.jpg
 lang: en
 ---
 
+As the software we are developing grows larger, more microservices are created, more individuals work simultaneously on the software, and transferring knowledge between teams becomes harder and more complex.
 
-As part of the software development process, where teams and individuals with various roles and multiple processes within an organization are involved, sharing information and knowledge increasingly becomes complex and even unmanageable. 
+Let me give you a real-world example; in the company I work for, each service publishes its APIs in a tool called Swagger. Swagger is a web-based tool that displays the schemas of APIs and allows you to call them right from there. Over time, the number of microservices in our organization increased, leading to a higher number of Swagger panels for each of these applications. You had to keep track of the Swagger addresses for all these services or ask their developers. The main problem arose when you didn't even know who the developer of the service you were interested in was or which team they belonged to.
 
-For example, it often happens that one of your services encounters an issue. You know that this service is connected to several other services, and you need to see whether other services developed by other teams have recently undergone any changes. Or, for another example, you may want to view documents related to your service or other services in one centralized location. Or imagine wanting to view, for instance, the Swagger documentation of a service, among thousands of similar tasks that arise during our day. To solve such issues, you often need access to multiple different panels. Moreover, if you have the necessary access to view this information (especially if your organization does not use a mono repository), you need a comprehensive panel that contains all this information. Since enterprise software has evolved into its present form, the idea of having such a comprehensive panel has always been a fantasy but an enticing one.
+As seen in this example, the missing link in this story is the lack of a suitable platform for knowledge transfer between teams.
+
+So what happened? One of the creative programmers in the organization took the initiative to create a simple HTML panel where all the Swagger addresses of the services were listed.
+
+Let me raise another requirement; suppose one of your services encounters an issue. You know that this service interacts with several other services and you need to see if these services developed by other teams have recently undergone any changes or not. Or imagine you want to view the documentation related to your service or other services in one centralized location.
+
+All of these make you have to log in to thousands of panels throughout the day and gather various pieces of information from different tools to advance an issue, provided that you have the necessary access for this matter.
+
+Imagine if there was a panel that provided all this information. How much simpler life would be? Backstage is precisely developed for this purpose.
 
 ## What is Backstage?
+So what is Backstage? Exactly, Backstage is a solution to the aforementioned problem. Developers at Spotify, just like us, faced the above-mentioned challenges and, therefore, needed what they termed as a developer portal to facilitate and expedite knowledge transfer. For this reason, they developed Backstage and when they saw that it's not such a strange thing technologically but rather a very effective solution, they decided to open-source it and let developers from other companies also benefit from it.
 
-Backstage is an open-source platform for building developer portals developed by Spotify developers as the magical panel mentioned above. Backstage integrates all your infrastructure tools, services, and documentation to create an end-to-end development environment seamlessly. How does this panel work? Backstage works by having all services in their repositories write their service specifications in a defined format (a YAML file). Once you register this file in Backstage, the magic begins. Dependencies, APIs, related links, pipelines, contributors, and more are all displayed in the Backstage panel. To update it, you just need to keep your YAML file up-to-date in your repository, and the Backstage panel periodically checks and keeps itself updated. In general, Backstage aims to improve onboarding processes, reduce the number of questions and distractions from other team members, and enhance other similar aspects. To see if Backstage has had a positive impact on your organization, you just need to see how much things have improved in these areas.
+So, Backstage is a self-declared tool (meaning developers help enrich it with information) with a bit of automation thrown in.
 
+To put it more precisely, in Backstage, you specify your service in a way (which I will mention later), define its APIs, share relevant links to your service, specify its dependencies (and thousands of other tasks like these), and Backstage takes responsibility for displaying, categorizing, updating changed data, and so on.
 
-## How to Set Up Backstage?
+In the image below, you can see an example of the service list in Backstage:
+ 
+[Link to Image](https://raw.githubusercontent.com/keshavarz13/keshavarz13.github.io/main/images/backstage/components.png)
 
-To install Backstage, you need to have NodeJS, Yarn, Docker, and Git installed. Then run the following command:
+For each of the services, we can display information such as dependencies on other services, a list of important document links and merge requests, programming language, and whatever else we want.
 
-```sh
-npx @backstage/create-app@latest
-```
+In the image below, you can see the minimal representation of service information in Backstage:
 
-Then run the following commands too:
+[Link to Image](https://raw.githubusercontent.com/keshavarz13/keshavarz13.github.io/main/images/backstage/component.webp)
 
-```sh
-cd your-backstage-directory
-yarn dev
-```
+One of the main features of Backstage is that you can install various plugins on it and enrich the information related to each of the services in Backstage.
 
-Congratulations, now you just need to open localhost:3000 in your browser to bring up Backstage for the first time on your system.
-
-In general, I will list below the things you should do to configure your backstage in the best way:
-
-<b>
-1: Setting up the postgres database for your backstage
-</b>
-
-  This will cause your changes to be saved on the database, by default sqlite is used in the backstage, which we all know its problems :)
-
-  To do this, you can use the [guide](https://backstage.io/docs/getting-started/configuration#install-and-configure-postgresql)
+For example, the image below shows an example of the GitLab plugin displaying information related to one of the services: 
 
 
-<b>
-2: Integrating with your organization's gitlab (self hosted gitlab)
-</b>
+[Link to Image](https://raw.githubusercontent.com/keshavarz13/keshavarz13.github.io/main/images/backstage/gitlab.webp)
 
-  doing this allows the backstage to read the definition of your services from your organization's git, can update it periodically, and information such as requests, contributors, issues, language Have programming and information like this from each of your repositories in the backstage.
+And finally, if I want to connect the end of my discussions to the beginning, if you remember I talked about sharing APIs in the form of Swagger, in Backstage, you can define APIs for each service. The image below shows an example of the API defined in one of the services: 
 
-  To do this, there is a proper plugin that you can easily use by using the [guide](https://github.com/immobiliare/backstage-plugin-gitlab).
+[Link to Image](https://raw.githubusercontent.com/keshavarz13/keshavarz13.github.io/main/images/backstage/api.webp)
 
-
-<b>
-3: Deploying and Docking the application
-</b>
-
-  There are several methods for this, such as separating slow and front-end, such as using a multi-stage docker file and other such methods, for this, there is no better place than [Backstage official document](https://backstage. io/docs/deployment/) cannot help you.
-
-
-### Adding a service to Backstage:
-To add a service behind the scenes, follow two steps.
-
-#### Step 1: Adding the YAML file for the service in the Git repository:
-To add a new service, create a YAML file in the service repository and fill in the service specifications.
-
-```yaml
-apiVersion: backstage.io/v1alpha1
-kind: Component
-metadata:
-  name: your-service-name # In this section, write the name of your service, for example, report-center and...
-  description: some shit about your service # In this section, you can explain a little about what this service is for.
-  links: # In this section, you can add links related to your service, such as Grafana, Hangfire, Confluence, etc.
-    - url: https://some.link/ 
-      title: some-link 
-      icon: some-material-icon # For this part, you can use material UI icons, for example, dashboard, etc. To be able to use the right icon, you can use this link: https://fonts.google.com/icons
-    - url: https://another.link/
-      title: backstage-official-website
-      icon: some-material-icon
-spec:
-  type: service 
-  lifecycle: Production # you can use Production/Development
-  owner: platform # write your team name. (Choose you team from this file: )
-  providesApis: # Names of API resources provided by your service and defined below (you can have any number of APIs)
-    - openapi-example 
-    - proto-example
-  consumesApis: # Names of API resources provided by another service and defined in the entities.yaml of that service(you can have any number of APIs)
-    - another-service-api-proto 
-
---- 
-apiVersion: backstage.io/v1alpha1
-kind: API
-metadata:
-  name: openapi-example 
-  description: your openapi api information
-spec:
-  type: openapi
-  lifecycle: production
-  owner: platform
-  dependsOn: # The names of the components you have dependencies on (if that component exists in the backstage, the name you enter must be the same as its name in the backstage)
-    - sql-serevr
-    - envoy
-    - report-center
-  definition:
-    $text: https://address.swagger.json/ # Add address of your swagger json for example https://foo.bar/swagger/v1/swagger.json
---- 
-apiVersion: backstage.io/v1alpha1
-kind: API
-metadata:
-  name: grpc-example
-  description: your proto api information
-spec:
-  type: grpc
-  lifecycle: production
-  owner: platform
-  definition:
-    $text: https://gitlab.your.company/rout/to/your/proto-file.proto
-```
-
-#### Step 2: Register your file in Backstage:
-1. Go to Backstage and click "+ create".
-2. Click on "Register Existing Component".
-3. Enter the address of your YAML file and click "Analyze".
-4. After reviewing, confirm the added components.
+## Conclusion
+In general, if everything is organized in your organization and you are living happily, and having multiple tabs in your browser, numerous authentications every day, and such annoyances bother your developers, or if knowledge transfer between developers has become difficult and you are looking for a tool to document everything in one shared panel, Backstage can help you.
