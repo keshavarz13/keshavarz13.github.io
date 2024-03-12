@@ -1,6 +1,6 @@
 ---
 layout: post-pr
-title: Backstage، چیست؟ چرا؟ چگونه؟
+title: Backstage، چیست؟
 tags: SoftwareEngineering 
 image: https://raw.githubusercontent.com/keshavarz13/keshavarz13.github.io/main/images/backstage.jpg
 lang: pr
@@ -31,17 +31,23 @@ lang: pr
 
 در تصویر زیر نمونه‌ای از لیست سرویس‌ها در بک‌استیج را مشاهده میکنید:   
 <img src="https://raw.githubusercontent.com/keshavarz13/keshavarz13.github.io/main/images/backstage/components.png" style="vertical-align:middle;text-align: center;"  width="450" >  
+  
 
 برای هر کدام از سرویس‌ها میتوان اطلاعاتی نظیر وابستگی‌ها به سایر سرویس‌ها، لیست لینک‌ها مهم داکیومنت‌ها و مرج‌ریکوئست‌ها، زبان برنامه نویسی و هر آن چه بخواهیم را نمایش بدهیم  
 در تصویر زیر نمونه‌ی اطلاعات یک سرویس را به حداقلی‌ترین شکل ممکن(!) میبینید   
 <img src="https://raw.githubusercontent.com/keshavarz13/keshavarz13.github.io/main/images/backstage/component.webp" style="vertical-align:middle;text-align: center;"  width="450" >  
+  
 
 یکی از اصلی‌ترین ویژگی‌های بک‌استیج این است که شما میتوانید پلاگین‌های متنوعی را روی آن نصب کنید و اطلاعات مربوط به هر کدام از سرویس‌ها را در بک‌استیج غنی‌تر کنیم.
 به عنوان مثال تصویر زیر نمونه‌ای از پلاگین گیت‌لب است که اطلاعات مربوط به یکی از سرویس‌ها را نمایش میدهد  
 <img src="https://raw.githubusercontent.com/keshavarz13/keshavarz13.github.io/main/images/backstage/gitlab.webp" style="vertical-align:middle;text-align: center;"  width="450" >  
+  
 
-و اما اگر بخواهم آخر صحبت‌هام رو به اول صحبت‌هام وصل کنم، اگر یادتون بیاد در مورد اشتراک گذاری api ها در قالب swagger صحبت کرده بودم، در backstage برای هر سرویس میتوانید api تعریف کنید، تصویر زیر نمونه‌ای از api تعریف شده در یکی از سرویس‌هاست. 
+و اما اگر بخواهم آخر صحبت‌هام رو به اول صحبت‌هام وصل کنم، اگر یادتون بیاد در مورد اشتراک گذاری api ها در قالب swagger صحبت کرده بودم، در backstage برای هر سرویس میتوانید api تعریف کنید، تصویر زیر نمونه‌ای از api تعریف شده در یکی از سرویس‌هاست.   
+
 <img src="https://raw.githubusercontent.com/keshavarz13/keshavarz13.github.io/main/images/backstage/api.webp" style="vertical-align:middle;text-align: center;"  width="450" >  
+
+  
 
 
 ## چگونه بک استیج را ستاپ کنیم؟
