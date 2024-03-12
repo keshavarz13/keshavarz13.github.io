@@ -30,22 +30,27 @@ lang: pr
 اگر بخواهم دقیق‌تر بگویم شما در بک استیج به طریقی (که جلوتر اشاره‌ای به آن خواهم کرد) سرویس خود را مشخص میکنید، ای پی آی ها آن را تعریف میکنی، لینک‌های مرتبط با سرویس خود را به اشتراک میگذاری، دیپندنسی‌های سرویست را مشخص میکنی (و هزاران کار دیگر از این دست) و بک استیج مسئولیت نمایش، دسته‌بندی، به روز‌رسانی داده‌های تغییر کرده و... را به عهده میگیرد.
 
 در تصویر زیر نمونه‌ای از لیست سرویس‌ها در بک‌استیج را مشاهده میکنید:   
-<img src="https://raw.githubusercontent.com/keshavarz13/keshavarz13.github.io/main/images/backstage/components.png" style="vertical-align:middle;text-align: center;"  width="450" >  
+  
+[Link to Image](https://raw.githubusercontent.com/keshavarz13/keshavarz13.github.io/main/images/backstage/components.png)
   
 
 برای هر کدام از سرویس‌ها میتوان اطلاعاتی نظیر وابستگی‌ها به سایر سرویس‌ها، لیست لینک‌ها مهم داکیومنت‌ها و مرج‌ریکوئست‌ها، زبان برنامه نویسی و هر آن چه بخواهیم را نمایش بدهیم  
 در تصویر زیر نمونه‌ی اطلاعات یک سرویس را به حداقلی‌ترین شکل ممکن(!) میبینید   
-<img src="https://raw.githubusercontent.com/keshavarz13/keshavarz13.github.io/main/images/backstage/component.webp" style="vertical-align:middle;text-align: center;"  width="450" >  
+
+
+[Link to Image](https://raw.githubusercontent.com/keshavarz13/keshavarz13.github.io/main/images/backstage/componen.webp)
   
 
 یکی از اصلی‌ترین ویژگی‌های بک‌استیج این است که شما میتوانید پلاگین‌های متنوعی را روی آن نصب کنید و اطلاعات مربوط به هر کدام از سرویس‌ها را در بک‌استیج غنی‌تر کنیم.
 به عنوان مثال تصویر زیر نمونه‌ای از پلاگین گیت‌لب است که اطلاعات مربوط به یکی از سرویس‌ها را نمایش میدهد  
-<img src="https://raw.githubusercontent.com/keshavarz13/keshavarz13.github.io/main/images/backstage/gitlab.webp" style="vertical-align:middle;text-align: center;"  width="450" >  
+  
+[Link to Image](https://raw.githubusercontent.com/keshavarz13/keshavarz13.github.io/main/images/backstage/gitlab.webp)
+
   
 
 و اما اگر بخواهم آخر صحبت‌هام رو به اول صحبت‌هام وصل کنم، اگر یادتون بیاد در مورد اشتراک گذاری api ها در قالب swagger صحبت کرده بودم، در backstage برای هر سرویس میتوانید api تعریف کنید، تصویر زیر نمونه‌ای از api تعریف شده در یکی از سرویس‌هاست.   
 
-<img src="https://raw.githubusercontent.com/keshavarz13/keshavarz13.github.io/main/images/backstage/api.webp" style="vertical-align:middle;text-align: center;"  width="450" >  
+[Link to Image](https://raw.githubusercontent.com/keshavarz13/keshavarz13.github.io/main/images/backstage/api.webp)
 
   
 
