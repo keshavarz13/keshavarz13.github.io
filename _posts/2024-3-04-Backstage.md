@@ -29,24 +29,24 @@ To put it more precisely, in Backstage, you specify your service in a way (which
 
 In the image below, you can see an example of the service list in Backstage:
  
-[Link to Image](https://raw.githubusercontent.com/keshavarz13/keshavarz13.github.io/main/images/backstage/components.png)
+![Link to Image](https://raw.githubusercontent.com/keshavarz13/keshavarz13.github.io/main/images/backstage/components.png)
 
 For each of the services, we can display information such as dependencies on other services, a list of important document links and merge requests, programming language, and whatever else we want.
 
 In the image below, you can see the minimal representation of service information in Backstage:
 
-[Link to Image](https://raw.githubusercontent.com/keshavarz13/keshavarz13.github.io/main/images/backstage/component.webp)
+![Link to Image](https://raw.githubusercontent.com/keshavarz13/keshavarz13.github.io/main/images/backstage/component.webp)
 
 One of the main features of Backstage is that you can install various plugins on it and enrich the information related to each of the services in Backstage.
 
 For example, the image below shows an example of the GitLab plugin displaying information related to one of the services: 
 
 
-[Link to Image](https://raw.githubusercontent.com/keshavarz13/keshavarz13.github.io/main/images/backstage/gitlab.webp)
+![Link to Image](https://raw.githubusercontent.com/keshavarz13/keshavarz13.github.io/main/images/backstage/gitlab.webp)
 
 And finally, if I want to connect the end of my discussions to the beginning, if you remember I talked about sharing APIs in the form of Swagger, in Backstage, you can define APIs for each service. The image below shows an example of the API defined in one of the services: 
 
-[Link to Image](https://raw.githubusercontent.com/keshavarz13/keshavarz13.github.io/main/images/backstage/api.webp)
+![Link to Image](https://raw.githubusercontent.com/keshavarz13/keshavarz13.github.io/main/images/backstage/api.webp)
 
 ## Conclusion
 In general, if everything is organized in your organization and you are living happily, and having multiple tabs in your browser, numerous authentications every day, and such annoyances bother your developers, or if knowledge transfer between developers has become difficult and you are looking for a tool to document everything in one shared panel, Backstage can help you.
