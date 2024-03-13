@@ -49,4 +49,4 @@ And finally, if I want to connect the end of my discussions to the beginning, if
 ![Link to Image](https://raw.githubusercontent.com/keshavarz13/keshavarz13.github.io/main/images/backstage/api.webp)
 
 ## Conclusion
-In general, if everything is organized in your organization and you are living happily, and having multiple tabs in your browser, numerous authentications every day, and such annoyances bother your developers, or if knowledge transfer between developers has become difficult and you are looking for a tool to document everything in one shared panel, Backstage can help you.
+In general, if everything is organized in your organization and you are living happily but having multiple tabs in your browser, numerous authentications every day, and such annoyances bother your developers, or if knowledge transfer between developers has become difficult and you are looking for a tool to document everything in one shared panel, Backstage can help you.
