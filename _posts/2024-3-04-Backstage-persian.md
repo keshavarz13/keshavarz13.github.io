@@ -38,7 +38,7 @@ lang: pr
 در تصویر زیر نمونه‌ی اطلاعات یک سرویس را به حداقلی‌ترین شکل ممکن(!) میبینید   
 
 
-![Link to Image](https://raw.githubusercontent.com/keshavarz13/keshavarz13.github.io/main/images/backstage/componen.webp)
+![Link to Image](https://raw.githubusercontent.com/keshavarz13/keshavarz13.github.io/main/images/backstage/component.webp)
   
 
 یکی از اصلی‌ترین ویژگی‌های بک‌استیج این است که شما میتوانید پلاگین‌های متنوعی را روی آن نصب کنید و اطلاعات مربوط به هر کدام از سرویس‌ها را در بک‌استیج غنی‌تر کنیم.
