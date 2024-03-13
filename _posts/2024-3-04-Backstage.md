@@ -25,7 +25,7 @@ So what is Backstage? Exactly, Backstage is a solution to the aforementioned pro
 
 So, Backstage is a self-declared tool (meaning developers help enrich it with information) with a bit of automation thrown in.
 
-To put it more precisely, in Backstage, you specify your service in a way (which I will mention later), define its APIs, share relevant links to your service, specify its dependencies (and thousands of other tasks like these), and Backstage takes responsibility for displaying, categorizing, updating changed data, and so on.
+To put it more precisely, in Backstage, you specify your service with yaml file, define its APIs, share relevant links to your service, specify its dependencies (and thousands of other information like these), and Backstage takes responsibility for displaying, categorizing, updating changed data, and so on.
 
 In the image below, you can see an example of the service list in Backstage:
  
