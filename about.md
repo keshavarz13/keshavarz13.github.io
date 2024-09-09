@@ -8,7 +8,7 @@ permalink: /about/
 
 - <b>MS, Software</b>
   - Amirkabir University of Technology (Tehran Polytechnic)
-  - Oct, 2021 – Present
+  - Oct, 2021 – Jul, 2024
   - GPA: 17.31/20
 
 - <b>B.Sc. Computer Engineering</b>
@@ -18,9 +18,21 @@ permalink: /about/
 
 ### WORK EXPERIENCES
 
+- Senior Software Engineer @ [Alibaba Travel Co](http://alibaba.ir/)  
+![.net](https://img.shields.io/badge/-ASP%20.NET%20Core-05122A?style=flat&logo=dotnet) ![go](https://img.shields.io/badge/-Go-05122A?style=flat&logo=go
+  - Apr 2020 – Apr 2022 And Feb 2024 - Present
+  - Software engineer coding in ASP.NET Core/C# and in charge of maintaining services below 
+      - User profile management service
+      - User financial account service
+      - Refund core service
+      - Credit cashout service
+      - Asynchronous, queueing fax service
+      - Chatbot service
+      - Report center service
+
 - Technical Team Lead @ [Tapsi](https://tapsi.ir/en)  
 ![go](https://img.shields.io/badge/-Go-05122A?style=flat&logo=go) ![Node.js](https://img.shields.io/badge/-Node.js-05122A?style=flat&logo=node.js)  
-  - Jan 2023 – Present
+  - Jan 2023 – Feb 2024
   - Software engineer coding in Go and NodeJS and in charge of maintaining services below
       - Reward and Discount service
       - Driver quest service
@@ -37,15 +49,6 @@ permalink: /about/
       - Estimator of the count of posts' views service
       - Contact service
 
-- Software Engineer @ [Alibaba Travel Co](http://alibaba.ir/)  
-![.net](https://img.shields.io/badge/-ASP%20.NET%20Core-05122A?style=flat&logo=dotnet) ![.csharp](https://img.shields.io/badge/-c%23-05122A?style=flat&logo=csharp) 
-  - Apr 2020 – Apr 2022
-  - Software engineer coding in ASP.NET Core/C# and in charge of maintaining services below 
-      - Refund core service
-      - Credit cashout service
-      - Asynchronous, queueing fax service
-      - Chatbot service
-      - Report center service
 
 ## 🤝🏻 Connect with Me
 <p align="left">
