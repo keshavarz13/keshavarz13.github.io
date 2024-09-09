@@ -2,7 +2,7 @@
 layout: post
 title: Query Optimization in PostgreSQL - Part 1
 tags: postgresql database
-image: https://raw.githubusercontent.com/keshavarz13/keshavarz13.github.io/main/images/pg-query-opt.png
+image: https://raw.githubusercontent.com/keshavarz13/keshavarz13.github.io/main/images/pg-query-opt.jpg
 lang: en
 ---
 

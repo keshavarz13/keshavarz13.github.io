@@ -2,7 +2,7 @@
 layout: post-pr
 title: بهینه‌سازی کوئری در postgreSQL - بخش اول
 tags: postgresql database
-image: https://raw.githubusercontent.com/keshavarz13/keshavarz13.github.io/main/images/pg-query-opt.png
+image: https://raw.githubusercontent.com/keshavarz13/keshavarz13.github.io/main/images/pg-query-opt.jpg
 lang: pr
 ---
 
