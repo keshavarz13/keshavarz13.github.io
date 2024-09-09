@@ -19,7 +19,7 @@ permalink: /about/
 ### WORK EXPERIENCES
 
 - Senior Software Engineer @ [Alibaba Travel Co](http://alibaba.ir/)  
-![.net](https://img.shields.io/badge/-ASP%20.NET%20Core-05122A?style=flat&logo=dotnet) ![go](https://img.shields.io/badge/-Go-05122A?style=flat&logo=go
+![.net](https://img.shields.io/badge/-ASP%20.NET%20Core-05122A?style=flat&logo=dotnet) ![go](https://img.shields.io/badge/-Go-05122A?style=flat&logo=go)
   - Apr 2020 – Apr 2022 And Feb 2024 - Present
   - Software engineer coding in ASP.NET Core/C# and in charge of maintaining services below 
       - User profile management service
